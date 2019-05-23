@@ -1,0 +1,41 @@
+baseURL: 'http://lorenzocestaro.com/'
+title: Lorenzo Cestaro
+googleAnalytics: UA-140467136-1
+
+author:
+  name: Lorenzo Cestaro
+
+languageCode: en-US
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm
+
+params:
+  description: Lorenzo Cestaro's personal website.
+  homeSubtitle: Biologist by training coder by passion
+  gitUrl: 'https://github.com/lorenzocestaro/lorenzocestaro.github.io/commit/'
+  dateform: 'Jan 2, 2006'
+  dateformShort: Jan 2
+  dateformNum: '2006-01-02'
+  dateformNumTime: '2006-01-02 15:04'
+  themeColor: '#494f5c'
+  justifyContent: false
+  extraCSS:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'
+    - 'https://fonts.googleapis.com/css?family=Fira+Mono|Signika:300&display=swap'
+  social:
+    - name: github
+      url: 'https://github.com/lorenzocestaro'
+    - name: npm
+      url: 'https://www.npmjs.com/~lorenzo.cestaro'
+    - name: linkedin
+      url: 'https://www.linkedin.com/in/lorenzocestaro/'
+    - name: instagram
+      url: 'https://instagram.com/lorenzo.cestaro'
+    - name: email
+      url: 'mailto:hi@lorenzocestaro.com'

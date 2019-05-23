@@ -1,0 +1,137 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+@import "colors.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "media.scss";
+
+html {
+  background: $theme-background;
+  line-height: 1.6;
+  letter-spacing: .06em;
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  color: $theme-text;
+  font-family: $sans-serif;
+}
+
+a {
+  color: $theme-text;
+  text-decoration: none;
+  border: none;
+}
+
+#spotlight {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 93%;
+  margin: auto;
+  font-size: 1.5rem;
+
+  &.error-404 {
+    flex-direction: row;
+    line-height: normal;
+  }
+}
+
+p.img-404 {
+  svg {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.banner-404 {
+  margin-left: 2em;
+
+  h1 {
+    font-size: 3em;
+    margin: .5rem 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .btn-404 {
+    font-size: .8em;
+
+    a {
+      display: inline-block;
+      border: 2px solid $theme-text;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+}
+
+// Home
+#home-center {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home-title {
+  margin: 0;
+  text-align: center;
+}
+
+#home-subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  text-align: center;
+  line-height: normal;
+  font-size: .7em;
+  font-style: italic;
+  opacity: .9;
+}
+
+#home-social {
+  font-size: 1.4em;
+  text-align: center;
+  opacity: .8;
+
+  a {
+    margin: 0 .2em;
+  }
+}
+
+#home-nav {
+  opacity: .8;
+
+  a {
+    display: block;
+    text-align: center;
+    margin-top: .5em;
+  }
+}
+
+#home-footer {
+  text-align: center;
+  font-size: .6em;
+  line-height: normal;
+  @include dimmed;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+// Social icons
+.feather {
+  width: 0.8em;
+  height: 0.8em;
+}

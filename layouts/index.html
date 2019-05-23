@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div id="spotlight">
+  <div id="home-center" class="animated fadeIn">
+    <h1 id="home-title">{{ .Site.Title }}</h1>
+    <p id="home-subtitle">{{ .Site.Params.homeSubtitle }}</p>
+    <div id="home-social">{{ partialCached "social-icons.html" .Site.Params.social }}</div>
+
+    <nav id="home-nav" class="site-nav">
+      {{- range .Site.Menus.main }}
+        <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+      {{- end }}
+    </nav>
+
+  </div>
+  <div id="home-footer">
+    <p>&copy; {{ now.Format "2006" }}
+      &#183;
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a>
+      &#183;
+      This work is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </p>
+  </div>
+</div>
+{{ end }}

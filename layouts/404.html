@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div id="spotlight" class="error-404 animated fadeIn">
+  <p class="img-404">{{- partial "lighthouse.svg" }}</p>
+  <div class="banner-404">
+    <h1>404</h1>
+    <p>You got lost in the sea.</p>
+    <p class="btn-404">
+      <a href="{{.Site.BaseURL}}">Go home</a>
+    </p>
+  </div>
+</div>
+{{ end }}
