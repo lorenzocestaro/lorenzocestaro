@@ -18,9 +18,15 @@ disableKinds:
   - taxonomyTerm
 
 params:
+  keywords:
+    - lorenzo
+    - cestaro
+    - software
+    - developer
+    - backend
   description: Lorenzo Cestaro's personal website.
   homeSubtitle: Biologist by training coder by passion
-  gitUrl: 'https://github.com/lorenzocestaro/lorenzocestaro.github.io/commit/'
+  gitUrl: 'https://github.com/lorenzocestaro/lorenzocestaro/commit/'
   dateform: 'Jan 2, 2006'
   dateformShort: Jan 2
   dateformNum: '2006-01-02'
