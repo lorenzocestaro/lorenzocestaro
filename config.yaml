@@ -1,4 +1,4 @@
-baseURL: 'http://lorenzocestaro.com/'
+baseURL: 'https://lorenzocestaro.com'
 title: Lorenzo Cestaro
 googleAnalytics: UA-140467136-1
 
@@ -9,6 +9,7 @@ languageCode: en-US
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
+canonifyURLs: true
 
 disableKinds:
   - RSS
