@@ -1,4 +1,4 @@
-baseURL: 'https://lorenzocestaro.com'
+baseURL: https://lorenzocestaro.com
 title: Lorenzo Cestaro
 googleAnalytics: UA-140467136-1
 
@@ -10,6 +10,7 @@ enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
 canonifyURLs: true
+disableHugoGeneratorInject: true
 
 disableKinds:
   - RSS
@@ -24,7 +25,6 @@ params:
   dateformShort: Jan 2
   dateformNum: '2006-01-02'
   dateformNumTime: '2006-01-02 15:04'
-  themeColor: '#494f5c'
   justifyContent: false
   extraCSS:
     - 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'
