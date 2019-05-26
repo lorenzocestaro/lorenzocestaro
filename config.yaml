@@ -1,5 +1,5 @@
 baseURL: https://lorenzocestaro.com
-title: Lorenzo Cestaro
+title: Lorenzo Cestaro - Software Developer
 googleAnalytics: UA-140467136-1
 
 author:
@@ -24,7 +24,7 @@ params:
     - software
     - developer
     - backend
-  description: Lorenzo Cestaro's personal website.
+  description: Lorenzo Cestaro software developer personal website.
   homeSubtitle: Biologist by training coder by passion
   gitUrl: 'https://github.com/lorenzocestaro/lorenzocestaro/commit/'
   dateform: 'Jan 2, 2006'
