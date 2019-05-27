@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div id="spotlight">
   <div id="home-center" class="animated fadeIn">
-    <h1 id="home-title">{{ .Site.Title }}</h1>
+    <h1 id="home-title">{{ .Site.Author.name }}</h1>
     <p id="home-subtitle">{{ .Site.Params.homeSubtitle }}</p>
     <div id="home-social">{{ partialCached "social-icons.html" .Site.Params.social }}</div>
 
