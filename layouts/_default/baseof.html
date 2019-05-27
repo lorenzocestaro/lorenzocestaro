@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{.Site.LanguageCode}}">
+
+<head>
+  <title>{{ .Title }}</title>
+  <meta name="title" content="{{ .Title }}" />
+  <meta name="description" content="{{ .Site.Params.Description }}" />
+  <meta name="keywords" content="{{ delimit .Site.Params.Keywords ", " }}">
+  <meta name="author" content="{{ .Site.Author.name }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <meta property="og:title" content="lorenzocestaro.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:description" content="{{ .Site.Params.Description }}" />
+  <meta property="og:image" content="{{ "nametag.png" | absURL }}">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ .Permalink }}">
+  <meta property="twitter:title" content="lorenzocestaro.com">
+  <meta property="twitter:description" content="{{ .Site.Params.Description }}">
+  <meta property="twitter:image" content="{{ "nametag.png" | absURL }}">
+
+  {{ partial "favicons.html" }}
+
+  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "css/style.css" . | toCSS | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ relURL $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+  {{ range .Site.Params.extraCSS }}
+  <link rel="stylesheet" href="{{ . | absURL }}">
+  {{ end }}
+
+  {{ block "head" . }}{{ end }}
+</head>
+
+<body id="page">
+  {{ block "main" . }}{{ end }}
+  {{ template "_internal/google_analytics_async.html" . }}
+</body>
+
+</html>
