@@ -12,6 +12,11 @@ enableRobotsTXT: true
 canonifyURLs: true
 disableHugoGeneratorInject: true
 
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+
 disableKinds:
   - RSS
   - taxonomy

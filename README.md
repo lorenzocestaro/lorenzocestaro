@@ -10,3 +10,4 @@ License](https://creativecommons.org/licenses/by/4.0/).
 * [normalize.css](https://necolas.github.io/normalize.css/) - [MIT](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
 * [animate.css](https://daneden.github.io/animate.css/) - [MIT](https://github.com/daneden/animate.css/blob/master/LICENSE)
 * [feather](https://feathericons.com/) - [MIT](https://github.com/feathericons/feather/blob/master/LICENSE)
+* [osano/cookieconsent](https://github.com/osano/cookieconsent) - [MIT](https://github.com/osano/cookieconsent/blob/master/LICENSE)

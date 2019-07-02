@@ -121,7 +121,7 @@ p.img-404 {
 
 #home-footer {
   text-align: center;
-  font-size: .6em;
+  font-size: 0.6em;
   line-height: normal;
   @include dimmed;
 
@@ -134,4 +134,27 @@ p.img-404 {
 .feather {
   width: 0.8em;
   height: 0.8em;
+}
+
+// Cookie consent banner
+.cc-message {
+  font-family: $sans-serif;
+  font-size: 0.7em;
+}
+
+.cc-banner {
+  border-bottom: 1px dashed #bfbfbf;
+}
+
+a.cc-btn {
+  font-family: $sans-serif;
+  font-size: 0.7em;
+  border-radius: 8px;
+  border-width: 1px;
+  text-align: center;
+}
+
+.cc-btn:hover {
+  color: $theme-background;
+  background-color: $theme-text;
 }
