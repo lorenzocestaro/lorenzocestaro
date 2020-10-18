@@ -16,6 +16,7 @@ privacy:
   googleAnalytics:
     anonymizeIP: true
     respectDoNotTrack: true
+    useSessionStorage: true
 
 disableKinds:
   - RSS
@@ -47,7 +48,5 @@ params:
       url: 'https://www.npmjs.com/~lorenzo.cestaro'
     - name: linkedin
       url: 'https://www.linkedin.com/in/lorenzocestaro/'
-    - name: instagram
-      url: 'https://instagram.com/lorenzo.cestaro'
     - name: email
       url: 'mailto:hi@lorenzocestaro.com'
